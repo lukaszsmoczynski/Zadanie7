@@ -1,0 +1,132 @@
+div.top{
+	width:100%;
+	text-align:right;
+	position:fixed;
+	background-color:gray;
+	height:20px;
+	color:white;
+	z-index:9999;
+}
+
+div.content{    
+	position: absolute;
+  top: 20px;
+  bottom: 0px;
+  width: 100%;
+}
+
+div.top > a{
+	color: white;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+div.files{
+	width: 100%;
+	position: absolute;
+	top: 73px;
+	bottom: 0px;
+}
+div.files > a {	
+	float: left;
+	width: 100px;
+	min-height: 136px;
+	position: relative;
+}
+
+div.files > a > div.image {	
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+div.files > a > div.description {	
+	text-align: center;
+}
+
+div.files > a:hover > div.image{
+	background-size: 80%;
+}
+
+a.directory > div.image{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-093_directory_fonts-512.png");
+}
+
+a.file > div.image{
+	background-image: url("https://cdn0.iconfinder.com/data/icons/document-file-types/512/document-512.png");
+}
+
+a.up > div.image{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/folder-14/64/Folder-06-512.png");
+}
+
+div.files > a:hover > div.description{
+	color: red;
+}
+
+div.files > a{
+	color: black;
+	text-decoration: none;
+	margin: 5px;
+}
+
+div.functions{
+	height: 53px;
+	background-color: red;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+	position: relative;
+	top: 3px;
+	float: right;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+div.deleteFile{	
+  background-image: url("https://cdn4.iconfinder.com/data/icons/colicon/24/close_delete-512.png");
+	position: relative;
+	width: 25px;
+	height: 25px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+div.deleteFile:hover{	
+	filter: brightness(70%);
+}
